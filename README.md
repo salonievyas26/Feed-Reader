@@ -3,6 +3,8 @@ FEED READER UDACITY PROJECT
 
 This project is created using Jasmine testing Framework.
 
+Access this project @ https://salonievyas26.github.io/Feed-Reader/
+
 Instructions
 ==============
 
