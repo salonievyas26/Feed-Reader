@@ -37,7 +37,6 @@ $(function() {
                 for (feed of allFeeds)
                 {
                     expect(feed.url).not.toBeNull();
-                    expect(feed.url.length).not.toBe(0);
                 }
             });
 
@@ -52,7 +51,6 @@ $(function() {
                 for (feed of allFeeds)
                 {
                     expect(feed.name).not.toBeNull();
-                     expect(feed.name.length).not.toBe(0);
                 }
             });
 
@@ -73,7 +71,7 @@ $(function() {
 
             expect($('body').hasClass('menu-hidden')).toBe(true);
 
-         })
+         });
 
 
          /* TODO: Write a test that ensures the menu changes
@@ -83,17 +81,17 @@ $(function() {
           */
 
           
-          it('is toggeled', function ()
+          it('menu is toggled', function ()
           {
                 //click evvent is triggered 
                 $('.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(false);
-                $('.menu-icon-link').trigger('click');
+                 $('.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(true);
+
                 
             });
 
-         
  });
 
         
