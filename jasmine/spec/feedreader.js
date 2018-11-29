@@ -86,7 +86,7 @@ $(function() {
           it('is toggeled', function ()
           {
                 //click evvent is triggered 
-                $('menu-icon-link').trigger('click');
+                $('a.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(false);
                 expect($('body').hasClass('menu-hidden')).toBe(true);
                 
