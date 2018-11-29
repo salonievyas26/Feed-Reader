@@ -88,6 +88,7 @@ $(function() {
                 //click evvent is triggered 
                 $('a.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(false);
+                $('a.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(true);
                 
             });
