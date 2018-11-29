@@ -81,22 +81,16 @@ $(function() {
           */
 
           
-          it('is Hidden', function ()
+          it('menu is toggled', function ()
           {
                 //click evvent is triggered 
-                $('menu-icon-link').trigger('click');
+                $('.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(false);
-                
-            });
-
-          it('is Shown', function ()
-          {
-                $('menu-icon-link').trigger('click');
+                 $('.menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(true);
 
                 
-
-          });
+            });
 
  });
 
