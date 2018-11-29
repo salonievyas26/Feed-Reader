@@ -37,6 +37,7 @@ $(function() {
                 for (feed of allFeeds)
                 {
                     expect(feed.url).not.toBeNull();
+                    expect(feed.url.length).not.toBe(0);
                 }
             });
 
@@ -51,6 +52,7 @@ $(function() {
                 for (feed of allFeeds)
                 {
                     expect(feed.name).not.toBeNull();
+                     expect(feed.name.length).not.toBe(0);
                 }
             });
 
@@ -81,23 +83,16 @@ $(function() {
           */
 
           
-          it('is Hidden', function ()
+          it('is toggeled', function ()
           {
                 //click evvent is triggered 
                 $('menu-icon-link').trigger('click');
                 expect($('body').hasClass('menu-hidden')).toBe(false);
+                expect($('body').hasClass('menu-hidden')).toBe(true);
                 
             });
 
-          it('is Shown', function ()
-          {
-                $('menu-icon-link').trigger('click');
-                expect($('body').hasClass('menu-hidden')).toBe(true);
-
-                
-
-          });
-
+         
  });
 
         
